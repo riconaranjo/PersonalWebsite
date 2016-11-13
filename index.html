@@ -34,7 +34,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-    <!-- just want to give credit to the guys that created the grayscale theme I'm using-->
+    <!-- CREDIT: to the guys that created the grayscale theme I'm using-->
     <!--You can download Grayscale for free on the preview page at http://startbootstrap.com/template-overviews/grayscale/ -->
 
 </head>
@@ -63,7 +63,7 @@
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-                    <!-- need to redo animation after selecting new section from navbar -->
+<!-- need to redo animation after selecting new section from navbar -->
                     <li>
                         <a class="page-scroll" href="#projects">Projects</a>
                     </li>
@@ -102,30 +102,30 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About Rico</h2>
-                <p>DESCRIPTION HERE: this website is currently under development, just a small side project I have. Website is hosted on <a href="https://github.com/FedericoNaranjo/PersonalWebsite">GitHub</a>, and domain was acquired from the wonderful people at <a href="http://nc.me">NameCheap</a>. I am using the Grayscale bootstrap theme which you can see at <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+                <p>This website is currently under development, just a small side project I have. Website is hosted on <a href="https://github.com/FedericoNaranjo/PersonalWebsite">GitHub</a>, and domain was acquired from the wonderful people at <a href="http://nc.me">NameCheap</a>. I am using the Grayscale bootstrap theme which you can see at <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
                 <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
                 <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
-                <p>One thing that I learned so far is that Jekyll (which GitHub uses) (also not sure what it does) ignores anything in folders named node_modules or vendor, which was causing issues; renamed 'vender' folder to 'res'.</p>
+                <p>One thing that I learned so far is that Jekyll (which GitHub uses) (also not sure what it does) ignores anything in folders named node_modules or vendor, which was causing issues; renamed 'vendor' folder to 'res'.</p>
             </div>
         </div>
     </section>
     
     <!-- Projects Section -->
     <section id="projects" class="content-section text-center">
-        <div class="download-section">
+        <div class="projects-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Projects</h2>
                     <p>This will have all the projects I am – or have been – working on (this website is one of them)</p>
                     <div class ="project">
-                        <p>*Project 1 Descrption*</p>
-                        <a href="" class="btn btn-default btn-lg">My Project 1</a>
-                        <p></p> <!--simple way of adding new line (is there a better way?)-->
+                        <h3>Software Development Notes</h3>
+                        <p>While learning programming languages for side projects and work, I have been writting notes for myself. These notes include a comprehensive introduction into Swift, C#, and Ruby; I encourage anyone that may find then useful to take advantage of them</p>
+                        <a href="https://github.com/FedericoNaranjo/Software-Development-Notes" class="btn btn-default btn-lg">My Notes</a>
                     </div>
                     <div class ="project">
-                        <p>*Project 2 Descrption*</p>
-                        <a href="" class="btn btn-default btn-lg">My Project 2</a>
-                        <p></p> <!--simple way of adding new line (is there a better way?)-->
+                        <h3>GPS Location iOS Application</h3>
+                        <p>A mobile application that shows you your current location as well as allows you to save various locations in a table where you can view them later.</p>
+                        <a href="https://github.com/FedericoNaranjo/LocationsApp" class="btn btn-default btn-lg">LocationsApp</a>
                     </div>
                 </div>
             </div>
@@ -134,7 +134,7 @@
 
     <!-- Resume Section -->
     <section id="resume" class="content-section text-center">
-        <div class="download-section">
+        <div class="resume-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Resume</h2>
@@ -165,8 +165,12 @@
         </div>
     </section>
 
-    <!-- Map Section -->
+    <div class="endPadding"></div>
+    <!--figure out a better way to add padding-->
+
+    <!-- Map Section 
     <div id="map"></div>
+    -->
 
     <!-- Footer -->
     <footer>
@@ -185,8 +189,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+<!-- add map later
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
+-->
     <!-- Theme JavaScript -->
     <script src="js/grayscale.min.js"></script>
 

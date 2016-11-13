@@ -8,7 +8,7 @@ body {
   height: 100%;
   font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
-  background-color: black;
+  background-color: lightslategrey;
 }
 html {
   width: 100%;
@@ -117,15 +117,15 @@ a:focus {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
+/* INTRO */
 .intro {
   display: table;
   width: 100%;
   height: auto;
-  padding: 100px 0;
+  padding: 100px 0 50px;    /* Top Left&Right Bottom */
   text-align: center;
   color: white;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-  background-color: black;
+  background: url(../img/Sticks_Gardient778899.jpeg) no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -137,9 +137,11 @@ a:focus {
 }
 .intro .intro-body .brand-heading {
   font-size: 40px;
+    color:mintcream;
 }
 .intro .intro-body .intro-text {
   font-size: 18px;
+    color:mintcream
 }
 @media (min-width: 768px) {
   .intro {
@@ -148,9 +150,11 @@ a:focus {
   }
   .intro .intro-body .brand-heading {
     font-size: 100px;
+      color:mintcream;
   }
   .intro .intro-body .intro-text {
     font-size: 26px;
+      color:mintcream;
   }
 }
 .btn-circle {
@@ -220,16 +224,34 @@ a:focus {
 .content-section {
   padding-top: 100px;
 }
-.download-section {
-  width: 100%;
-  padding: 50px 0;
-  color: white;
-  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+/* RESUME */
+.resume-section {
+    width: 100%;
+    padding: 150px 0; /* Top&Bottom Left&Right */
+    color: mintcream;
+    background: url(../img/wide_Gradient.jpeg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+/* PROJECTS */
+.projects-section {
+    width: 100%;
+    padding: 150px 0; /* Top&Bottom Left&Right */
+    color: mintcream;
+    background: url(../img/OttawaFall_Gradients.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.project {
+    width: 100%;
+    padding: 25px 0;
+}
+.endPadding {
+    padding: 75px 0;
 }
 #map {
   width: 100%;
