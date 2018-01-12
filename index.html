@@ -1,198 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <meta property="og:site_name" content="riconaranjo.me"/>
-    <meta property="og:title" content="Rico Naranjo: Wannabe Coffee Connoisseur"/>
-    <meta property="og:description" content="Rico Naranjo is an electrical engineering student, with a strong focus on software. This is my personal website where I will use to hone my skills in web development, design, and show off a few of my other personal projects."/>
-    <meta property="og:image" content="http://riconaranjo.me/res/profilePicture.jpg"> <!-- insert actual image here, sometime in the future-->
-    <meta property="og:url" content="http://riconaranjo.me">
-    <meta property="og:type" content="profile"/>
-
-    <title>Rico Naranjo</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="res/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="res/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-    <!-- Theme CSS -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:site_name" content="riconaranjo.me"/>
+        <meta property="og:title" content="Rico Naranjo: Wannabe Coffee Connoisseur"/>
+        <meta property="og:description" content="Rico Naranjo is an electrical engineering student, with a strong focus on software. This is my personal website where I will use to hone my skills in web development, design, and show off a few of my other personal projects."/>
+        <meta property="og:image" content="http://riconaranjo.me/res/websiteImage.png">
+        <meta property="og:url" content="http://riconaranjo.me">
+        <meta property="og:type" content="profile"/>
+        <title>Rico Naranjo</title>
+        <!-- Bootstrap Core CSS -->
+        <link href="res/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href="res/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <!-- Theme CSS -->
+        <link href="css/grayscale.min.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    <!-- CREDIT: to the guys that created the grayscale theme I'm using-->
-    <!--You can download Grayscale for free on the preview page at http://startbootstrap.com/template-overviews/grayscale/ -->
-
-</head>
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+        <![endif]-->
+        <!-- CREDIT: to the guys that created the grayscale theme I'm using-->
+        <!--You can download Grayscale for free on the preview page at http://startbootstrap.com/template-overviews/grayscale/ -->
+    </head>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">
                     <i class="fa fa-play-circle"></i> <span class="light">Rico</span> Naranjo
-                </a>
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#about">About</a>
+                        </li>
+                        <!-- need to redo animation after selecting new section from navbar -->
+                        <li>
+                            <a class="page-scroll" href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#resume">Resume</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-<!-- need to redo animation after selecting new section from navbar -->
-                    <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#resume">Resume</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Rico</h1>
-                        <p class="intro-text">A third year electrical engineering student, with an interest in software development and photography.</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
+            <!-- /.container -->
+        </nav>
+        <!-- Intro Header -->
+        <header class="intro">
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h1 class="brand-heading"><span class="">Rico</span></h1>
+                            <p class="intro-text">A third year electrical engineering student, with an interest in software development and photography.</p>
+                            <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Rico</h2>
-                <p>This website is currently under development, just a small side project I have. Website is hosted on <a href="https://github.com/FedericoNaranjo/PersonalWebsite">GitHub</a>, and domain was acquired from the wonderful people at <a href="http://nc.me">NameCheap</a>. I am using the Grayscale bootstrap theme which you can see at <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>All photos used are my own personal photos of Ottawa, since I would consider myself an amateur photographer</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Projects Section -->
-    <section id="projects" class="content-section text-center">
-        <div class="projects-section">
-            <div class="container">
+        </header>
+        <!-- About Section -->
+        <section id="about" class="container content-section text-center">
+            <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Projects</h2>
-                    <p>This will have all the projects I am – or have been – working on (this website is one of them)</p>
-                    <div class ="project">
-                        <h3>Software Development Notes</h3>
-                        <p>While learning programming languages for side projects and work, I have been writting notes for myself. These notes include a comprehensive introduction into Swift, C#, and Ruby; I encourage anyone that may find them useful to take advantage of them.</p>
-                        <a href="https://github.com/FedericoNaranjo/Software-Development-Notes" class="btn btn-default btn-lg">My Notes</a>
-                    </div>
-                    <div class ="project">
-                        <h3>GPS Location iOS Application</h3>
-                        <p>A mobile application that shows you your current location as well as allows you to save various locations in a table where you can view them later.</p>
-                        <a href="https://github.com/FedericoNaranjo/LocationsApp" class="btn btn-default btn-lg">LocationsApp</a>
+                    <h2>About Rico</h2>
+                    <p>This website is currently under development, just a small side project I have. Website is hosted on <a href="https://github.com/FedericoNaranjo/PersonalWebsite">GitHub</a>, and domain was acquired from the wonderful people at <a href="http://nc.me">NameCheap</a>. I am using the Grayscale bootstrap theme which you can see at <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+                    <p>All photos used are my own personal photos of Ottawa, since I would consider myself an amateur photographer</p>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section id="projects" class="content-section text-center">
+            <div class="projects-section">
+                <div class="container">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h2>Projects</h2>
+                        <p>Everyday, I strive to learn something new. These are the projects that I've worked on either in school, at work, or usually just on my own time for fun. I think it's more interesting when you apply your knowledge to build something, especially when it solves a real-world problem.</p>
+                        <!-- individual projects go here -->
+                        <div class ="project">
+                            <h3>Personal Website</h3>
+                            <p>This project was started in order to familiarize myself with basic web development using html and css to make static websites. All the source files for the website are hosted on GitHub. I plan on using it to showcase some of my photos and as a record of my projects and awards, as well as a challenge to teach myself something I was not taught in school.</p>
+                            <a href="https://github.com/FedericoNaranjo/PersonalWebsite" class="btn btn-default btn-lg">Source Code</a>
+                        </div>
+                        <div class ="project">
+                            <h3>Location iOS App</h3>
+                            <p>I built this app while completing an iOS tutorial from Udemy. I first built it in early 2016 with just a year of coding experience. The app is built with a TableView and a MapView with a NavigationViewController. The user can use the map to find significant locations and store them in the table for later viewing, as well as saving their current location [in CoreData].</p>
+                            <p>This project was very good at teaching me how to create a [at the time] large project compared to my school assignments that never required more than 50 lines of code. I learned how to use callbacks, since the reverse geocoded was my first experience with asynchronous programming. I also learned how to change the colour scheme of an app within Xcode, as well how to implement some basic force touch functions.</p>
+                            <p>The first product was very disorganized and very much 'hacked together'; this lead to many headaches and entire weeks figuring out bugs. After the summer of 2016  I got hired to work on a software development team (C#) for 12 months and learned a great deal about proper software development conventions, and how to organize very large files and code-bases. Nearing the end of my 12 months I decided it would be fun to rewrite/refactor the entire application, while also serving as a refresher for iOS development.</p>
+                            <p>I spent two whole weeks after work on this project and in the end I saw that I have overcomplicated much of the logic and also expanded on this project by adding the colour scheme, icons, and force touch. I changed the data storage from NSUserDefaults to CoreData, which although did not simplify the app, it made it more scalable and allowed me to learn something new.</p>
+                            <p>I am very proud of this app because it shows me how far I have come in just 2-3 years, as well as it showed me that I can overcome new challenges with enough perseverance.</p>
+                            <a href="https://github.com/FedericoNaranjo/LocationsApp" class="btn btn-default btn-lg">Locations App</a>
+                        </div>
+                        <div class ="project">
+                            <h3>Super Awesome Store iOS App</h3>
+                            <p>This was a challenge for the Mobile Developer Intern at Shopify, where we had to parse a json containing all the products and variants offered by a super duper awesome store. The products are shown in a table with an image, product title, vendor name, and number of variants. The tableview loads dynamically as the data is parsed and the images are downloaded.</p>
+                            <p>This was my first experience with json and also helpful at learning more how to use URLSession and asynchronous functions in swift. More information including the source code and notes on how I built this can be found on GitHub by clicking the button below.</p>
+                            <a href="https://github.com/FedericoNaranjo/Software-Development-Notes" class="btn btn-default btn-lg">Super Awesome Store App</a>
+                        </div>
+                        <div class ="project">
+                            <h3>Automated Testing Framework</h3>
+                            <p>In software development, oftentimes testing will take up a very significant amount when adding new features or improving the performance of the product, in order to ensure that old functionality is not broken with the code changes. This can be very costly for the company and can kill the momentum a team has since testing is both mundane and tedious. A thorough description of the project can be found on GitHub by clicking the button below.</p>
+                            <p>In order to improve the regression cycles on my team I was tasked with designing and building an automated testing framework, under guidance of a QA developer. We used Selenium in order to interact with the browser since it was a web-based application. Gherkin was used to write the actual test cases so they could be implemented by team-members not familiar with C# or programming in general, since Gherkin is written in natural English. The framework was written in C# and run on Visual Studio, and was able to execute with 4 threads about 400 test cases in just over an hour; these same test cases run manually would have taken the team about a three days to complete.</p>
+                            <p>I did not finish implementing all the test cases since three were too many and my coop terms there came to an end but the framework structure was in place and only had to be expanded to include mappings to the whole application.</p>
+                            <a href="https://github.com/FedericoNaranjo/Software-Development-Notes" class="btn btn-default btn-lg">Documentation</a>
+                        </div>
+                        <div class ="project">
+                            <h3>Software Development Notes</h3>
+                            <p>While learning programming languages for side projects and work, I have been writting notes for myself. These notes include a comprehensive introduction into Swift, C#, and Ruby; I encourage anyone that may find them useful to take advantage of them.</p>
+                            <a href="https://github.com/FedericoNaranjo/Software-Development-Notes" class="btn btn-default btn-lg">My Notes</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="content-section text-center">
-        <div class="resume-section">
-            <div class="container">
+        </section>
+        <!-- Awards Section -->
+        <section id="awards" class="content-section text-center">
+            <div class="awards-section">
+                <div class="container">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h2>Awards</h2>
+                        <p>These are some of the awards I earned throughout the years. I am proud of my work and these validate my effort and motivate me to continue pushing myself to improve. The scholarships are also nice because tuition debts.</p>
+                        <!-- individual awards go here -->
+                        <div class ="project">
+                            <h3>APEO Scholarship</h3>
+                            <p>I earned this scholarship for my community involvement as an engineering student at Carleton. I am an active member in three clubs as well as a TA while maintaining a focus on my studies.</p>
+                            <p>I am an executive member of the IEEE student branch, helping out organize events and run the office as a student resource centre. I am also an executive member of the CUHacking organizing committee where we plan on hosting the largest hackathon in Ottawa with 400 attendees. I am also a member on the CU Inspace rocket competition team, helping to design and build the ground station software.</p>
+                            <p>I enjoying being a member of all these clubs since I am able to meet interesting people, help those around me, and apply the concepts I've learned in class or on my own.</p>
+                        </div>
+                        <div class ="project">
+                            <h3>Murdoch Maxwell MacOdrum Scholarship</h3>
+                            <p>I earned this scholarship after my second year of electrical engineering in which I managed grades in the top 15% of my year. This required an immense amount of dedication and concentration for an entire 8 months and I learned a great deal about time-management and how to excel at university level courses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Resume Section -->
+        <section id="resume" class="content-section text-center">
+            <div class="resume-section">
+                <div class="container">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h2>Resume</h2>
+                        <p>I am open to learning opportunities and novel challenges; if you are interested, my resume is down below. Feel free to get in touch.</p>
+                        <a href="res/resume.pdf" class="btn btn-default btn-lg">Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="container content-section text-center">
+            <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Resume</h2>
-                    <p>I am open to learning opportunities and novel challenges; if you think we may be able to collaborate, my resume is down below. Feel free to get in touch.</p>
-                    <a href="res/resume.pdf" class="btn btn-default btn-lg">Resume</a>
+                    <h2>Contact Me</h2>
+                    <p>Feel free to email me to provide some feedback on this website, give some suggestions on how to improve it, or to just say hello!</p>
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="mailto:federiconaranjobelli@cmail.carleton.ca" class="btn btn-default btn-lg"><i class="fa fa-envelope-o"></i> <span class="network-name">Email</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/federico-naranjo-bellina" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/FedericoNaranjo/" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Me</h2>
-                <p>Feel free to email me to provide some feedback on this website, give some suggestions on how to improve it, or to just say hello!</p>
-                <p><a href="mailto:federico.naranjo@gmail.com">federico.naranjo@gmail.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://www.linkedin.com/in/federico-naranjo-bellina" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/FedericoNaranjo/PersonalWebsite" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                </ul>
+        </section>
+        <div class="endPadding"></div>
+        <!--figure out a better way to add padding-->
+        <!-- Map Section 
+            <div id="map"></div>
+            -->
+        <!-- Footer -->
+        <footer>
+            <div class="container text-center">
+                <p>Copyright &copy; riconaranjo.me 2018</p>
             </div>
-        </div>
-    </section>
-
-    <div class="endPadding"></div>
-    <!--figure out a better way to add padding-->
-
-    <!-- Map Section 
-    <div id="map"></div>
-    -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; riconaranjo.me 2016</p>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="res/jquery/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="res/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-<!-- add map later
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
--->
-    <!-- Theme JavaScript -->
-    <script src="js/grayscale.min.js"></script>
-
-</body>
-
+        </footer>
+        <!-- jQuery -->
+        <script src="res/jquery/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="res/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Plugin JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+        <!-- add map later
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+            -->
+        <!-- Theme JavaScript -->
+        <script src="js/grayscale.min.js"></script>
+    </body>
 </html>
