@@ -21,7 +21,6 @@ h4,
 h5,
 h6 {
   margin: 0 0 35px;
-  text-transform: uppercase;
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
@@ -244,7 +243,7 @@ a:focus {
     width: 100%;
     padding: 100px 0; /* Top&Bottom Left&Right */
     color: mintcream;
-    background: url(../img/OttawaFall_Gradients.jpg) no-repeat center center scroll;
+    background: url(../img/Gol_Gradients.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -292,7 +291,6 @@ a:focus {
   }
 }
 .btn {
-  text-transform: uppercase;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   -webkit-transition: all 0.3s ease-in-out;
@@ -351,7 +349,4 @@ img::selection {
 }
 img::-moz-selection {
   background: transparent;
-}
-body {
-  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
