@@ -1,6 +1,6 @@
 # PersonalWebsite
 
-<a href="riconaranjo.me">riconaranjo.me</a>
+<a href="http://riconaranjo.me">riconaranjo.me</a>
 
 This will be my personal website in order to both learn more about web design, but also a place to show off my personal projects both for self promotion and future nostalgia.
 
