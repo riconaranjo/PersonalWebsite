@@ -1,151 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:site_name" content="riconaranjo.me"/>
-        <meta property="og:title" content="Rico Naranjo: Wannabe Coffee Connoisseur"/>
-        <meta property="og:description" content="Rico Naranjo is an electrical engineering student, with a strong focus on software. This is my personal website where I will use to hone my skills in web development, design, and show off a few of my other personal projects."/>
-        <meta property="og:image" content="http://riconaranjo.me/res/websiteImage.png">
-        <meta property="og:url" content="http://riconaranjo.me">
-        <meta property="og:type" content="profile"/>
-        <title>Rico Naranjo</title>
-        <!-- Bootstrap Core CSS -->
-        <link href="res/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom Fonts -->
-        <link href="res/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-        <!-- Theme CSS -->
-        <link href="css/grayscale.css" rel="stylesheet">
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-        <!-- CREDIT: to the guys that created the grayscale theme I'm using-->
-        <!--You can download Grayscale for free on the preview page at http://startbootstrap.com/template-overviews/grayscale/ -->
-    </head>
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-        <!-- Navigation -->
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i> <span class="light">Rico</span> Naranjo
-                    </a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                        <li class="hidden">
-                            <a href="#page-top"></a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#about">About</a>
-                        </li>
-                        <!-- need to redo animation after selecting new section from navbar -->
-                        <li>
-                            <a class="page-scroll" href="#projects">Projects</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="we">
+    <meta name="author" content="riconaranjo">
+    <meta property="og:site_name" content="riconaranjo.me"/>
+    <meta property="og:title" content="Rico Naranjo"/>
+    <meta property="og:description" content="I am an electrical engineer with a minor in computer science and amateur photographer. This is my personal website, feel free to take a look around."/>
+    <meta property="og:image" content="http://riconaranjo.me/img/profile.png">
+    <meta property="og:url" content="http://riconaranjo.me">
+    <meta property="og:type" content="profile"/>
+
+    <title>Rico Naranjo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- devicons 2.0 from http://konpa.github.io/devicon/ -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="css/resume.min.css" rel="stylesheet"> -->
+    <link href="css/resume.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Federico Naranjo</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.png" alt=""> <!-- TODO: update this with live link -->
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <!-- About -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <!-- Experience -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <!-- Projects -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <!-- Education -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <!-- Skills -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <!-- Interests -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+          </li>
+          <!-- Awards -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Sections -->
+    <div class="container-fluid p-0">
+
+      <!-- About Section -->
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <!-- Name -->
+          <h1 class="mb-0">Federico
+            <span class="text-primary">Naranjo</span>
+          </h1>
+          <!-- <div class="subheading mb-5">Ottawa, Ontario • 
+            <a href="mailto:federico.naranjo+eng@gmail.com">federico.naranjo@gmail.com</a>
+          </div> -->
+          <div class="subheading mb-5">Ottawa, Ontario | Rico</div>
+          <!-- Name Subtitle -->
+          <!-- <p class="lead mb-5">A fourth year electrical engineering student [with a minor in computer science], with an interest in photography.</p> -->
+
+          <ul class="lead mb-5">
+              <li>fourth year engineering student</li>
+              <li>minor in computer science</li>
+              <li>up-and-coming developer</li>
+              <li>amateur photographer</li>
+          </ul>
+          <div class="social-icons">
+            <a href="https://github.com/riconaranjo">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="http://linkedin.com/in/riconaranjo/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="http://instagram.com/riconaranjo/">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:federico.naranjo+eng@gmail.com">
+              <i class="fas fa-paper-plane"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <!-- Experience Section -->
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Experience</h2>
+
+          <!-- Sanmina -->
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">ICT Engineering Coop</h3>
+                <div class="subheading mb-3">Sanmina</div>
+                <ul>
+                  <li><strong>Developed ICT test suites</strong> for complex printed-circuit-boards.</li>
+                  <li>Created suite of <strong>Python scripts </strong> to automate data parsing and test generation,  <strong>reducing engineering effort by two days per project.</strong></li>
+                </ul>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">May 2018 – Aug. 2018</span>
+              </div>
+          </div>
+
+          <!-- TA -->
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Teaching Assistant</h3>
+              <div class="subheading mb-3">Carleton University</div>
+              <ul>
+                  <li>Helping students  <strong>understand and master basic programming </strong> (C + Java) and <strong>software development  concepts</strong> during multiple weekly lab sessions.</li>
+                </ul>
             </div>
-            <!-- /.container -->
-        </nav>
-        <!-- Intro Header -->
-        <header class="intro">
-            <div class="intro-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h1 class="brand-heading"><span class="">Rico</span></h1>
-                            <p class="intro-text">A fourth year electrical engineering student, with an interest in software development and photography.</p>
-                            <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Sept. 2017 – Present</span>
             </div>
-        </header>
-        <!-- About Section -->
-        <section id="about" class="container content-section text-center">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>About Rico</h2>
-                    <p>I am a motivated student with passion for technology and design. My major focus right now is school. On the side, I am currently focused on learning software development [iOS mainly] through self-directed learning. One of my major interests is photography and I recently bought a camera (Fuji X-T20), and I've been taking pictures non-stop ever since.</p>
-                </div>
+          </div>
+
+          <!-- CaseWare -->
+          <div class="resume-item d-flex flex-column flex-md-row">
+
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">Software Developer Intern</h3>
+                <div class="subheading mb-3">CaseWare</div>
+                <ul>
+                  <li><strong>Designed and built an automated testing framework</strong> that reduced testing effort by finding defects early in the development cycle.</li>
+                  <li><strong>Gained proficiency</strong> and practical experience with <strong>C#, Selenium, Gherkin, and Visual Studio IDE</strong> to create and maintain large projects.</li>
+                  <li><strong>Documented entire framework</strong> using <strong>XML</strong> commenting and a <strong>Markdown</strong> guide so that the project could be understood and maintained by the team.</li>
+                </ul>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">Sept. 2016 – Aug. 2017</span>
+              </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <hr class="m-0">
+
+      <!-- Projects Section -->
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+          <div class="my-auto">
+            <h2 class="mb-5">Projects</h2>
+  
+            <!-- Gather-Ring -->
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">Gather-Ring Enhancement Proposal</h3>
+                <div class="subheading mb-3">Team Leader, Third Year Project</div>
+                <ul>
+                    <li><strong>Designing a tracking system</strong> to be installed on the <a href="http://gather-ring.ca">Gather-Ring</a> installation.</li>
+                    <li><strong>Managing project</strong> and delegating tasks, <strong>to ensure the successful completion of the proof-of-concept</strong> within budget and on schedule.</li>
+                    <li><strong>Tracking visitors with ultrasonic sensors and microcontrollers </strong> to create patterns using LED lights <strong>to create an interactive community space.</strong></li>
+                  </ul>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">Jan. 2018 – Apr. 2018</span>
+              </div>
             </div>
-        </section>
-        <!-- Projects Section -->
-        <section id="projects" class="content-section text-center">
-            <div class="projects-section">
-                <div class="container">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <h2>Projects</h2>
-                        <p>Everyday, I strive to learn something new. These are the projects that I've worked on either in school, at work, or usually just on my own time for fun. I think it's more interesting when you apply your knowledge to build something, especially when it solves a real-world problem.</p>
-                        <p>I have several projects I've worked on and am currently working on. The most important project I'm working on is organizing <a href='cuhacking.com'>cuHacking</a>, currently planned for February 2019.</p>
-                        <p>I like documenting the projects I work on, so that I can look back and see how far I've come, and how much  I progress year after year. I keep most of my software projects on my <a href="https://github.com/riconaranjo/">GitHub account</a>, so feel free to take a look there for my personal projects.</p>
-                    </div>
-                </div>
+  
+            <!-- Locations iOS App -->
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">Locations iOS App</h3>
+                <div class="subheading mb-3">Self-learning Project</div>
+                <ul>
+                    <li><strong>Developed an iOS application</strong> which allows the users to navigate a map and save various locations and view them later, <strong>to learn new skills.</strong></li>
+                    <li><strong>Used Apple frameworks</strong> such as <strong>MapKit</strong> and <strong>CoreData</strong> with <a href="https://developer.apple.com/design/human-interface-guidelines/">Apple's design principles (HIG)</a> to create an <strong>intuitive and responsive user interface.</strong></li>
+                    <li>Used this experience <strong>to organize a <a href="https://github.com/riconaranjo/iOS-Workshop">workshop</a> teaching others </strong> how to create their own app and using <strong>iOS app development tools with Github.</strong></li>
+                  </ul>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">Jun. 2016 – Aug. 2017</span>
+              </div>
             </div>
-        </section>
-        <!-- Contact Section -->
-        <section id="contact" class="container content-section text-center">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Contact Me</h2>
-                    <p>Feel free to email me to provide some feedback on this website, give some suggestions on how to improve it, or to just say hello!</p>
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="res/resume.pdf" class="btn btn-default btn-lg"><i class="fa fa-file-text"></i> <span class="network-name">Resume</span></a>
-                        </li>
-                        <li>
-                            <a href="mailto:federiconaranjobelli@cmail.carleton.ca" class="btn btn-default btn-lg"><i class="fa fa-envelope"></i> <span class="network-name">Email</span></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/federico-naranjo-bellina" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/riconaranjo/" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">GitHub</span></a>
-                        </li>
-                    </ul>
-                </div>
+  
+            <!-- iOS Curriculum -->
+            <div class="resume-item d-flex flex-column flex-md-row">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">iOS Curriculum</h3>
+                <div class="subheading mb-3">Personal Project</div>
+                <ul>
+                    <li><strong>Creating a series of 5 workshops to teach students</strong> how to design and develop their own iOS applications using <strong>Xcode + Swift.</strong></li>
+                    <li><strong>The workshops are designed to guide the students</strong> through every step in the process so that no students get left behind.</li>
+                    <li><strong>Workshop and topic difficulty</strong> will progress from <strong>Swift basics</strong> onto more complex topics such as <strong>CoreData</strong> and <strong>asynchronous functions.</strong></li>
+                    <li>This project remains a <strong>work in <a href="https://github.com/riconaranjo/iOS-Curriculum">progress</a>.</strong></li>
+                  </ul>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">July 2018 – Present</span>
+              </div>
             </div>
-        </section>
-        <div class="endPadding"></div>
-        <!--figure out a better way to add padding-->
-        <!-- Map Section 
-            <div id="map"></div>
-            -->
-        <!-- Footer -->
-        <footer>
-            <div class="container text-center">
-                <p>copyright &copy; riconaranjo.me | 2018</p>
+  
+          </div>
+  
+      </section>
+
+      <hr class="m-0">
+
+      <!-- Education Section -->
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+          <!-- Carleton -->
+          <!-- <div class="resume-item d-flex flex-column flex-md-row mb-5"> // use this if more than elem -->
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Carleton University</h3>
+              <div class="subheading mb-3">Bachelor of Engineering</div>
+              <div><strong>Electrical Engineering + Coop</strong> | Minor in Computer Science</div>
+              <p>GPA: 10/12</p>
             </div>
-        </footer>
-        <!-- jQuery -->
-        <script src="res/jquery/jquery.js"></script>
-        <!-- Bootstrap Core JavaScript -->
-        <script src="res/bootstrap/js/bootstrap.min.js"></script>
-        <!-- Plugin JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-        <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-        <!-- add map later
-            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-            -->
-        <!-- Theme JavaScript -->
-        <script src="js/grayscale.min.js"></script>
-    </body>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Sept. 2014 - Present</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <!-- Skills Section -->
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+
+          <!-- skill icons -->
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline dev-icons">
+            <!-- c -->
+            <li class="list-inline-item">
+              <i class="devicon-c-plain"></i>
+            </li>
+            <!-- c++ -->
+            <li class="list-inline-item">
+              <i class="devicon-cplusplus-plain"></i>
+            </li>
+            <!-- c# -->
+            <li class="list-inline-item">
+              <i class="devicon-csharp-plain"></i>
+            </li>
+            <!-- swift -->
+            <li class="list-inline-item">
+              <i class="devicon-swift-plain"></i>
+            </li>
+            <!-- java -->
+            <li class="list-inline-item">
+                <i class="devicon-java-plain"></i>
+              </li>
+            <!-- python -->
+            <li class="list-inline-item">
+              <i class="devicon-python-plain"></i>
+            </li>
+            <!-- ruby -->
+            <li class="list-inline-item">
+              <i class="devicon-ruby-plain"></i>
+            </li>
+            <!-- git -->
+            <li class="list-inline-item">
+              <i class="devicon-git-plain"></i>
+            </li>
+            <!-- html5 -->
+            <li class="list-inline-item">
+              <i class="devicon-html5-plain"></i>
+            </li>
+            <!-- css3 -->
+            <li class="list-inline-item">
+              <i class="devicon-css3-plain"></i>
+            </li>
+            <!-- linux -->
+            <li class="list-inline-item">
+              <i class="devicon-linux-plain"></i>
+            </li>
+            <!-- ubuntu -->
+            <li class="list-inline-item">
+              <i class="devicon-ubuntu-plain"></i>
+            </li>
+            <!-- cucumber -->
+            <li class="list-inline-item">
+              <i class="devicon-cucumber-plain"></i>
+            </li>
+            <!-- slack -->
+            <li class="list-inline-item">
+              <i class="devicon-slack-plain"></i>
+            </li>
+            <!-- illustrator -->
+            <li class="list-inline-item">
+              <i class="devicon-illustrator-line"></i>
+            </li>
+            <!-- photoshop -->
+            <li class="list-inline-item">
+              <i class="devicon-photoshop-line"></i>
+            </li>
+            <!-- vs -->
+            <li class="list-inline-item">
+              <i class="devicon-visualstudio-plain"></i>
+            </li>
+            <!-- apple -->
+            <li class="list-inline-item">
+                <i class="devicon-apple-original"></i>
+              </li>
+            <!-- windows -->
+            <li class="list-inline-item">
+              <i class="devicon-windows8-original"></i>
+            </li>
+          </ul>
+
+          <!-- workflows -->
+          <div class="subheading mb-3">Workflow</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Team management + Leadership</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Testing Automation + Scripting</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Problem Solving + Debugging</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Agile Development + Scrum</li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <!-- Interests Section -->
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h2 class="mb-5">Interests</h2>
+
+          <p>I went into electrical engineering because of my strong interest in all things tech and because I like building my own things. I took up programming for much of the same reasons and have fallen in love with the feeling of thinking of an idea, figuring out how to make it a reality, and then going through the process of turning my idea into a reality.</p>
+          <p >I am an amateur photographer; last year I got a new camera (a black <a href="https://www.fujifilm.ca/products/digital_cameras/x/fujifilm_x_t20/">Fuji X-T20</a>), and I've been taking photos of everything. My favourite pictures are from my trip to Vancouver last year, specifically on the ferry ride to Victoria.</p>
+          <p class="mb-0">Aside from technology and photography, my other interests include reading, attending (and <a href="https://cuhacking.com">organizing</a>) hackathons, intramural soccer, and <a href="https://www.vitsoe.com/us/about/good-design">good design</a>.</p>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <!-- Awards Section -->
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        <div class="my-auto">
+          <h2 class="mb-5">Awards</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li far fa-star text-warning"></i>
+              <strong>People's Choice (2018)</strong> – Awarded at McHacks for creating 'best hack', as voted by participants.</li>
+            <li>
+              <i class="fa-li far fa-star text-warning"></i>
+              <strong>APEO Scholarship (2017)</strong> – Awarded for community involvement and academic success by Professional Engineers of Ontario.</li>
+            <li>
+              <i class="fa-li far fa-star text-warning"></i>
+              <strong>Maxwell MacOdrum Scholarship (2016)</strong> – Awarded to students with outstanding academic performance.</li>
+            <li>
+              <i class="fa-li far fa-star text-warning"></i>
+              <strong>Dean's List (2016)</strong> – Awarded to students for academic excellence.</li>
+            <li>
+              <i class="fa-li far fa-star text-warning"></i>
+              <strong>Commanding Officer's Leadership Award (2012)</strong> – Awarded to Cadet that displayed exceptional leadership qualities.</li>
+            <li>
+              <i class="fa-li far fa-star text-warning"></i>
+              <strong>Commanding Officer's Leadership Award (2011)</strong> – Awarded to Cadet that displayed exceptional leadership qualities.</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+  </body>
+
 </html>
