@@ -1,7 +1,5 @@
-# PersonalWebsite
+# 👨🏽‍💻 <a href="https://riconaranjo.me">riconaranjo.me</a>
 
-<a href="http://riconaranjo.me">riconaranjo.me</a>
+**This is my personal website**, which I use as a place **to learn about simple website design** and how to use **HTML** and **CSS**.
 
-This will be my personal website in order to both learn more about web design, but also a place to show off my personal projects both for self promotion and future nostalgia.
-
-The domain was acquired from nc.me, as they give students a domain one year for free; this is greatly appreciated, shout out to them!
+If you like to know more about my experience, skills, or interests, feel free to take a visit and look around. 🙂
