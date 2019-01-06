@@ -207,6 +207,10 @@ a:hover, a:focus, a:active {
   color: #5D6A6B;
 }
 
+ul > a {
+  color: #f2f4f3;
+}
+
 strong {
   font-weight: 500;
 }
