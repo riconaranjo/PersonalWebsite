@@ -66,6 +66,11 @@ ul.lead {
   color: #afb5b3;
 }
 
+.subtitle {
+  font-size: 1.3rem;
+  color: #afb5b3;
+}
+
 .social-icons a {
   display: inline-block;
   height: 3.5rem;
