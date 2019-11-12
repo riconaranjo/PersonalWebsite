@@ -40,6 +40,7 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
+  color: #80B092;
 }
 
 h3 {
@@ -104,7 +105,7 @@ ul.lead {
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 500;
   letter-spacing: 0.05rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 /* #d48a6e --> 99C18D */
@@ -214,6 +215,14 @@ a:hover, a:focus, a:active {
 
 ul > a {
   color: #f2f4f3;
+}
+
+h3 > a {
+  color: #f2f4f3;
+}
+
+h3 > a:hover, a:focus, a:active {
+  color: #80B092;
 }
 
 strong {
